@@ -1,8 +1,8 @@
 require 'facebook/messenger'
 
 Facebook::Messenger.configure do |config|
-  config.access_token = ENV['ACCESS_TOKEN']
-  config.verify_token = ENV['VERIFY_TOKEN']
+  config.access_token = 'EAACkDXnXwbsBANop2ckai0RITPPZCImkeRR2dzSFnCTzLoJa8V2WHq8xU1vkEzlafTZCaUCvRxnZBN0ZAYg3LjUafndffIe8N6Px3NGzZCsWcwZCkXfZBwq1qhZBMRbb7phoOHzIdQbsMVpxbBmXoZBdcdH4G7apitLZBYIWZBbFBZB7MQZDZD'
+  config.verify_token = 'password'
 end
 
 include Facebook::Messenger
