@@ -9,13 +9,14 @@ GEM
       multi_xml (>= 0.5.2)
     json (1.8.3)
     multi_xml (0.5.5)
-    rack (2.0.1)
+    rack (1.6.4)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   facebook-messenger
+  rack (~> 1.6, >= 1.6.4)
 
 BUNDLED WITH
    1.12.5
