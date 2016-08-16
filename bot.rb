@@ -100,7 +100,7 @@ Bot.on :message do |message|
     Bot.deliver(
       recipient: message.sender,
       message: {
-        text: 'You are now marked for extermination.'
+        text: "Sorry I don't understand you..."
       }
       )
 
@@ -131,4 +131,14 @@ end
 
 Bot.on :delivery do |delivery|
   puts "Delivered message(s) #{delivery.ids}"
+end
+
+Bot.on :delivery do |delivery|
+  delivery.ids       # => 'mid.1457764197618:41d102a3e1ae206a38'
+  delivery.sender    # => { 'id' => '1008372609250235' }
+  delivery.recipient # => { 'id' => '2015573629214912' }
+  delivery.at        # => 2016-04-22 21:30:36 +0200
+  delivery.seq       # => 37
+
+  puts "Human was online at #{delivery.at}"
 end
